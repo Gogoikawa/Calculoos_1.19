@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "calculoos",
+  "version": "${version}",
+
+  "name": "Calculoos",
+  "description": "CalcMod adds a simple and intuitive command that allows players to perform various mathematical calculations within the game. With the command, players can quickly and easily add, subtract, multiply, divide. To use the CalcMod command, simply type '/calc' followed by your calculation. For example, to add two numbers together, type '/calc 5+3' and the mod will provide the correct answer.",
+  "authors": [
+    "Gogoikawa"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/calculoos/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.gogoikawa.calculoos.Calculoos"
+    ]
+  },
+  "mixins": [
+    "calculoos.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
